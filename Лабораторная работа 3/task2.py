@@ -4,4 +4,3 @@ def find_common_participants(first_group, second_group, sep=','):
 
 participants_first_group = "Иванов|Петров|Сидоров"
 participants_second_group = "Петров|Сидоров|Смирнов"
-
