@@ -1,6 +1,13 @@
+def count_chars(string, char):
+    total = 0
+    for i in string:
+        total += i == char
+    return total
+
+
 def count_letters(text):
     text_lower = text.lower()
-    return {i: text_lower.count(i) for i in text_lower if i.isalpha()}
+    return {i: count_chars(text_lower, i) for i in text_lower if i.isalpha()}
 
 
 def calculate_frequency(dict_count_letters):
